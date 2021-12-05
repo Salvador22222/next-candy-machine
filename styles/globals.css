@@ -6,8 +6,13 @@ html,
 body {
   padding: 0;
   margin: 0;
+  color: white;
   font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
     Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-image: url(./background.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 a {
@@ -17,4 +22,11 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.frosted-glass{
+  background-color: #2d2356c0;
+  padding: 0.2rem 0.5rem;
+  backdrop-filter: blur(8px);
+  border-radius: 0.75rem;
 }
