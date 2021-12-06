@@ -70,7 +70,7 @@ export default function Home() {
           name="description"
           content="Simplified NextJs with typescript example app integrated with Metaplex's Candy Machine"
         />
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/favicon.png" />
       </Head>
 
       <div className="flex flex-col items-center min-h-screen mx-6">
@@ -122,7 +122,7 @@ export default function Home() {
                 )}
             </>
           ) : (
-              <p className="text-3xl underline">connect wallet to mint</p>
+            <img src="/connect-wallet.png" alt="connect wallet to mint" />
             )}
         </div>
         <div className="flex flex-col w-full">
