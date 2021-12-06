@@ -36,7 +36,9 @@ export default function Home() {
   }, []);
 
   const MintMany = () => {
-    const [mintCount, setMintCount] = useState(5);
+    const [mintCount, setMintCount] = useState(1);
+
+	const setMint = (e: any) => setMintCount((e.target as any).value);
 
     return (
       <>
@@ -55,7 +57,7 @@ export default function Home() {
           max={5}
           className="px-2 mx-auto mt-5 font-bold text-white bg-gray-500"
           value={mintCount}
-          onChange={(e) => setMintCount((e.target as any).value)}
+          onChange={setMint}
         />
         <p className="mx-auto mt-2">(Min 1; Max 5;)</p>
       </>
